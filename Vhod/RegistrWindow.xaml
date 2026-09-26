@@ -1,0 +1,28 @@
+﻿<Window x:Class="Vhod.RegistrWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vhod"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="800" FontFamily="Comic Sans MS" MinHeight="480" MinWidth="430">
+    <Grid>
+        <Button Content="Назад" Margin="10" Background="#FF498B51" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10 5" Click="Nazad_Click"/>
+        <Border BorderThickness="2" BorderBrush="#FF498B51" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="15" CornerRadius="15">
+            <StackPanel MinWidth="250">
+                <TextBlock Text="Регистрация" HorizontalAlignment="Center" FontSize="24"/>
+                <TextBlock Text="Фамилия" Margin="0 10 0 0"/>
+                <TextBox x:Name="SurnameBox" PreviewTextInput="LettersOnly_PreviewTextInput"/>
+                <TextBlock Text="Имя" Margin="0 10 0 0"/>
+                <TextBox x:Name="NameBox" PreviewTextInput="LettersOnly_PreviewTextInput"/>
+                <TextBlock Text="Отчество" Margin="0 10 0 0"/>
+                <TextBox x:Name="PatronymicBox" PreviewTextInput="LettersOnly_PreviewTextInput"/>
+                <TextBlock Text="Логин" Margin="0 10 0 0"/>
+                <TextBox x:Name="LoginBox" TextChanged="LoginBox_TextChanged"/>
+                <TextBlock Text="Пароль" Margin="0 10 0 0"/>
+                <TextBox x:Name="PassBox"/>
+                <Button x:Name="RegButton" Content="Зарегистрироваться" Margin="0 20 0 0" Height="30" Background="#FF498B51" Foreground="White" Click="Reg_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

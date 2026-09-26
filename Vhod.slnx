@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Vhod.Api/Vhod.Api.csproj" Id="267759e8-b6e9-4d2b-bd00-9d5ed859437d" />
+  <Project Path="Vhod.Models/Vhod.Models.csproj" Id="bac69041-36aa-4256-9298-3d87a9d17e92" />
+  <Project Path="Vhod/Vhod.csproj" Id="3a594063-4276-4712-b3e8-b6e55d1664fc" />
+</Solution>
